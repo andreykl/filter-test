@@ -21,4 +21,9 @@ for `filterFile` (in turn, wrapped by `runFilter`). The `filterFile` can be used
 without any wrappers: `filterFile "/tmp/inputfile.txt"
 "/tmp/output-emails.txt" (filter $ elem '@')`
 
+To run `filterFile` from ghci do
+* stack ghci
+* `filterFile "/tmp/inputfile.txt" "/tmp/output-emails.txt" (filter $ elem '@')`
+
 File `app/Main.hs` contains only work with GTK.
+
